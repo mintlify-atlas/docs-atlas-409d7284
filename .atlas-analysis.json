@@ -1,0 +1,107 @@
+{
+  "projectType": "saas",
+  "projectName": "BlinkDisk",
+  "projectDescription": "The easiest way to backup your files with end-to-end encryption.",
+  "theme": "almond",
+  "primaryColor": "#3B82F6",
+  "lightColor": "#60A5FA",
+  "darkColor": "#2563EB",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/backups",
+              "features/restore",
+              "features/scheduling",
+              "features/exclusions",
+              "features/encryption",
+              "features/deduplication"
+            ]
+          },
+          {
+            "group": "Storage Options",
+            "pages": [
+              "storage/overview",
+              "storage/cloudblink",
+              "storage/custom-storage",
+              "storage/s3-compatible",
+              "storage/local-filesystem",
+              "storage/other-providers"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "advanced/configuration",
+              "advanced/performance",
+              "advanced/troubleshooting",
+              "advanced/security"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Development",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "development/introduction",
+              "development/setup",
+              "development/architecture"
+            ]
+          },
+          {
+            "group": "Components",
+            "pages": [
+              "development/desktop-app",
+              "development/electron-backend",
+              "development/api-backend",
+              "development/cloud-storage"
+            ]
+          },
+          {
+            "group": "Contributing",
+            "pages": [
+              "development/contributing",
+              "development/code-style",
+              "development/testing"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "End-to-end encrypted backups",
+    "Cross-platform desktop application (Windows, macOS, Linux)",
+    "File deduplication for storage efficiency",
+    "CloudBlink managed storage with free tier",
+    "Custom storage support (S3, local, NAS, WebDAV, SFTP)",
+    "Automated scheduled backups",
+    "Built on Kopia open-source backup engine",
+    "User-friendly interface for non-technical users"
+  ],
+  "publicApiSurface": [
+    "Vault API - create, list, delete backup vaults",
+    "Config API - sync configuration across devices",
+    "Payment API - manage CloudBlink subscriptions",
+    "Profile API - user account management",
+    "IPC channels for Electron communication",
+    "Backup snapshots and restore operations",
+    "Storage provider configuration",
+    "Policy and scheduling settings"
+  ]
+}
